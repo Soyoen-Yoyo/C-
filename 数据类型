@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+//一，整型：short，int，long，long long：数字
+
+short num1=10;
+int num2=10;
+long num3=10;
+long long num4=10;
+
+
+//二，sizeof（数据类型/变量）：可以求出数据类型所占的内存空间
+//语法：cout<<sizeof(变量)<<endl;
+	
+cout<<"short占用的内存空间为："<<sizeof(short)<<endl; 
+cout<<"int占用的内存空间为："<<sizeof(int)<<endl;
+cout<<"long占用的内存空间为："<<sizeof(long)<<endl;
+cout<<"long long占用的内存空间为："<<sizeof(long long)<<endl;
+
+
+//三，实型（浮点型）:小数 
+//1.单精度 float (7位有效数字)
+//2.双精度 double  (15-16位有效数字)
+//默认情况下输出一个小数会显示六位有效数字 
+
+
+//四，字符型变量:字母
+//1.创建方式：char ch='a';
+
+//2.字符型变量常见错误
+//创建字符变量时候，要用单引号 
+//创建字符变量时候，单引号内只能有一个内容 
+
+//3.字符型变量对应ASCII编码	
+cout<<(int)ch<<endl; 
+
+
+//五，转义字符(C语言） 
+//1.换行符：\n
+
+//2.反斜杠：\\ 
+cout<<"\\";
+ 
+//3.水平制表符：\t   (...\t一共占据八个字符)
+
+//六，布尔类型
+//创建bool数据类型：bool flag=true/false;
+	
+		system("pause");
+	return 0;
+}
